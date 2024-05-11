@@ -1,5 +1,6 @@
-# Welcome to Front – Admin & Dashboard Template! #
+# MascotYou Static dash_mvp0 Site #
 
+This site was built using Front - Admin & Dashboard Template
 Front Dashboard by Htmlstream
 
 ### Documentation and Getting Started ###
