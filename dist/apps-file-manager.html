@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Big 5 Analysis | MascotYou</title>
+  <title>File Manager | MascotYou</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="./favicon.ico">
@@ -16,8 +16,6 @@
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
-
-  <link rel="stylesheet" href="./assets/vendor/tom-select/dist/css/tom-select.bootstrap5.css">
 
   <!-- CSS Front Template -->
 
@@ -305,7 +303,7 @@
             <!-- Notification -->
             <div class="dropdown">
               <button type="button" class="btn btn-ghost-secondary btn-icon rounded-circle" id="navbarNotificationsDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-dropdown-animation>
-                <img src="assets/svg/icons/bell.svg" alt="bell icon">
+                <i class="bi-bell"></i>
                 <span class="btn-status btn-sm-status btn-status-danger"></span>
               </button>
 
@@ -709,12 +707,124 @@
             <!-- End Notification -->
           </li>
 
+          <li class="nav-item d-none d-sm-inline-block">
+            <!-- Apps -->
+            <div class="dropdown">
+              <button type="button" class="btn btn-icon btn-ghost-secondary rounded-circle" id="navbarAppsDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>
+                <i class="bi-app-indicator"></i>
+              </button>
+
+              <div class="dropdown-menu dropdown-menu-end dropdown-card navbar-dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="navbarAppsDropdown" style="width: 25rem;">
+                <div class="card">
+                  <!-- Header -->
+                  <div class="card-header">
+                    <h4 class="card-title">Web apps &amp; services</h4>
+                  </div>
+                  <!-- End Header -->
+
+                  <!-- Body -->
+                  <div class="card-body card-body-height">
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/atlassian-icon.svg" alt="Image Description">
+                        </div>
+                        <div class="flex-grow-1 text-truncate ms-3">
+                          <h5 class="mb-0">Atlassian</h5>
+                          <p class="card-text text-body">Security and control across Cloud</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/slack-icon.svg" alt="Image Description">
+                        </div>
+                        <div class="flex-grow-1 text-truncate ms-3">
+                          <h5 class="mb-0">Slack <span class="badge bg-primary rounded-pill text-uppercase ms-1">Try</span></h5>
+                          <p class="card-text text-body">Email collaboration software</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
+                        </div>
+                        <div class="flex-grow-1 text-truncate ms-3">
+                          <h5 class="mb-0">Google webdev</h5>
+                          <p class="card-text text-body">Work involved in developing a website</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/frontapp-icon.svg" alt="Image Description">
+                        </div>
+                        <div class="flex-grow-1 text-truncate ms-3">
+                          <h5 class="mb-0">Frontapp</h5>
+                          <p class="card-text text-body">The inbox for teams</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
+                        </div>
+                        <div class="flex-grow-1 text-truncate ms-3">
+                          <h5 class="mb-0">HS Support</h5>
+                          <p class="card-text text-body">Customer service and support</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <div class="avatar avatar-sm avatar-soft-dark">
+                            <span class="avatar-initials"><i class="bi-grid"></i></span>
+                          </div>
+                        </div>
+                        <div class="flex-grow-1 text-truncate ms-3">
+                          <h5 class="mb-0">More Front products</h5>
+                          <p class="card-text text-body">Check out more HS products</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Body -->
+
+                  <!-- Footer -->
+                  <a class="card-footer text-center" href="#">
+                    View all apps <i class="bi-chevron-right"></i>
+                  </a>
+                  <!-- End Footer -->
+                </div>
+              </div>
+            </div>
+            <!-- End Apps -->
+          </li>
+
+          <li class="nav-item d-none d-sm-inline-block">
+            <!-- Activity -->
+            <button class="btn btn-ghost-secondary btn-icon rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasActivityStream" aria-controls="offcanvasActivityStream">
+              <i class="bi-x-diamond"></i>
+            </button>
+            <!-- Activity -->
+          </li>
+
           <li class="nav-item">
             <!-- Account -->
             <div class="dropdown">
               <a class="navbar-dropdown-account-wrapper" href="javascript:;" id="accountNavbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-dropdown-animation>
-                <div class="avatar avatar-sm avatar-soft-primary avatar-circle">
-                  <span class="avatar-initials">MY</span>
+                <div class="avatar avatar-sm avatar-circle">
+                  <img class="avatar-img" src="./assets/img/160x160/img6.jpg" alt="Image Description">
                   <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                 </div>
               </a>
@@ -908,175 +1018,854 @@
     </div>
   </aside>
 
-  <main id="content" role="main" class="main">
+  <main id="content" role="main" class="main overflow-hidden">
+    <!-- Added overflow: hidden; to avoid Bootstrap horizontal scrolling issue when .btn-group > .dropdown is used in .row class -->
     <!-- Content -->
     <div class="content container-fluid">
       <!-- Page Header -->
       <div class="page-header">
-        <h1 class="page-header-title">Results Summary</h1>
-        <div class="col-auto">
-          <div class="row align-items-center g-0">
-            <div class="col-auto">Analysis Date:</div>
+        <div class="row align-items-end">
+          <div class="col-sm mb-2 mb-sm-0">
+            <!-- <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-no-gutter">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Pages</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Project</a></li>
+                <li class="breadcrumb-item active" aria-current="page">File manager</li>
+              </ol>
+            </nav> -->
 
-            <!-- Flatpickr -->
-            <div class="col flatpickr-custom-position-fix-sm-down">
-              <div id="projectDeadlineFlatpickr" class="js-flatpickr flatpickr-custom flatpickr-custom-borderless input-group input-group-sm" data-hs-flatpickr-options='{
-                      "appendTo": "#projectDeadlineFlatpickr",
-                      "dateFormat": "d/m/Y",
-                      "wrap": true
-                    }'>
-                <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="05/22/2024">
-                <div class="input-group-append input-group-text ps-0" data-bs-toggle>
-                  <i class="bi-chevron-down"></i>
-                </div>
+            <h1 class="page-header-title">Files</h1>
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-auto" aria-label="Button group">
+            <!-- Button Group -->
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadFilesModal">
+                Upload
+              </button>
+
+              <!-- <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" id="uploadGroupDropdown" data-bs-toggle="dropdown" aria-expanded="false"></button>
+
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="uploadGroupDropdown">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-folder-plus dropdown-item-icon"></i> New folder
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-folder-symlink dropdown-item-icon"></i> New shared folder
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#uploadFilesModal">
+                    <i class="bi-file-earmark-arrow-up dropdown-item-icon"></i> Upload files
+                  </a>
+                  <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#uploadFilesModal">
+                    <i class="bi-upload dropdown-item-icon"></i> Upload folder
+                  </a>
+                </div> -->
               </div>
             </div>
-            <!-- End Flatpickr -->
+            <!-- End Button Group -->
           </div>
+          <!-- End Col -->
         </div>
-
-        <!-- Nav -->
-        <!-- <ul class="nav nav-tabs page-header-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              Published
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Pending <span class="badge bg-soft-dark text-dark rounded-pill ms-1">2</span>
-            </a>
-          </li>
-        </ul> -->
-        <!-- End Nav -->
+        <!-- End Row -->
       </div>
       <!-- End Page Header -->
 
-      <!-- Factor Chart Card -->
-      <div class="card mb-3 mb-lg-5">
-        <!-- Body -->
-        <div class="card-body">
-          <div class="row align-items-md-center gx-md-5">
-            <div class="col-md align-items-md-center">
-              <table class="table table-sm align-items-md-center">
-                <thead>
-                  <td scope="col" style="width: 7%;">Factor</td>
-                  <td scope="col" style="width: 10%; text-align: right;">Factor label</td>
-                  <td scope="col">Raw score</td>
-                  <td scope="col" style="width: 12%;">Score percentile</td>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">I</td>
-                    <td style="text-align: right">Openness</td>
-                    <td style="padding-top: 13.5px;">
-                      <div class="progress flex-grow-1">
-                        <div class="" role="progressbar" style="width: 78%; background-color: #23679e;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </td>
-                    <td>78%</td>
-                  </tr>
-                  <tr>
-                    <td scope="row">II</td>
-                    <td style="text-align: right;">Conscientiousness</td>
-                    <td style="padding-top: 13.5px;">
-                      <div class="progress flex-grow-1">
-                        <div class="" role="progressbar" style="width: 98%; background-color: #4a84be;" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </td>
-                    <td>98%</td>
-                  </tr>
-                  <tr>
-                    <td scope="row">III</td>
-                    <td style="text-align: right;">Extraversion</td>
-                    <td style="padding-top: 13.5px;">
-                      <div class="progress flex-grow-1">
-                        <div class="" role="progressbar" style="width: 89%; background-color: #6ca2de;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </td>
-                    <td>89%</td>
-                  </tr>
-                  <tr>
-                    <td scope="row">IV</td>
-                    <td style="text-align: right;">Agreeableness</td>
-                    <td style="padding-top: 13.5px;">
-                      <div class="progress flex-grow-1">
-                        <div class="" role="progressbar" style="width: 20%; background-color: #8dc1ff;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </td>
-                    <td>20%</td>
-                  </tr>
-                  <tr>
-                    <td scope="row">V</td>
-                    <td style="text-align: right;">Neuroticism</td>
-                    <td style="padding-top: 13.5px;">
-                      <div class="progress flex-grow-1">
-                        <div class="" role="progressbar" style="width: 93%; background-color: #aee2ff;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </td>
-                    <td>93%</td>
-                  </tr>
-                </tbody>
-                
-              </table>
+      <!-- Header -->
+      <div class="row align-items-center mb-2">
+        <!-- <div class="col">
+          <h2 class="h4 mb-0">Files</h2>
+        </div> -->
+
+        <div class="col-auto">
+          <!-- Nav -->
+          <!-- <ul class="nav nav-segment" id="connectionsTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="grid-tab" data-bs-toggle="tab" href="#grid" role="tab" aria-controls="grid" aria-selected="true" title="Column view">
+                <i class="bi-grid"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="list-tab" data-bs-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false" title="List view">
+                <i class="bi-view-list"></i>
+              </a>
+            </li>
+          </ul> -->
+          <!-- End Nav -->
+        </div>
+      </div>
+      <!-- End Header -->
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="connectionsTabContent">
+        <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+          <!-- Folders -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">25kb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown1" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">WordPress contract terms</h5>
+                  <p class="small">Updated 50 min ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
             </div>
             <!-- End Col -->
-          </div>
-          <!-- End Row -->
-        </div>
-        <!-- End Body -->
-      </div>
-      <!-- End Card -->
 
-      
-      <h3>Trait Descriptions</h3>
-      
-      <!-- Card -->
-      <div class="card">
-        <!-- End Nav -->
-        <div class="card-body">
-          <!-- Start Nav -->
-          <div class="text-center">
-            <ul class="nav nav-segment nav-pills scrollbar-horizontal mb-7" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link" id="pills-one-code-features-example1-tab" data-toggle="pill" href="./big-five-analysis.html" role="tab" aria-controls="pills-one-code-features-example1" aria-selected="true">Factor I</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-two-code-features-example1-tab" data-toggle="pill" href="./big-five-analysis-conscientiousness.html" role="tab" aria-controls="pills-two-code-features-example1" aria-selected="false">Factor II</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="pills-three-code-features-example1-tab" data-toggle="pill" href="./big-five-analysis-extraversion.html" role="tab" aria-controls="pills-three-code-features-example1" aria-selected="false">Factor III</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link active">Factor IV</a>
-            </li>
-            <li class="nav-item">
-              <a href="./big-five-analysis-neuroticism.html" class="nav-link">Factor V</a>
-            </li>
-            </ul>
-          </div>
-          <p>
-            <strong>Factor IV</strong> is labelled as <strong>Agreeableness</strong>.
-            <br><br>
-            Individuals who score high on <strong>Agreeableness</strong> are characterized as being warm, kind, and considerate. They tend to be cooperative and are 
-            motivated to maintain harmonious social relationships. They may also have a strong sense of empathy and concern for the welfare of others.
-            <br><br>
-            In contrast, individuals who score low on <strong>Agreeableness</strong> tend to be more competitive and skeptical. They may be less motivated to maintain 
-            social harmony and may be more likely to express their opinions forcefully, even if they may conflict with others.
-            <br><br>
-            Research has shown that <strong>Agreeableness</strong> is linked to a range of outcomes, including interpersonal relationships, job performance, and mental 
-            health. For example, individuals who score high on <strong>Agreeableness</strong> tend to have more positive and supportive relationships with others. 
-            They may also be more successful in careers that require teamwork and collaboration. Additionally, they tend to have better mental health outcomes, such 
-            as lower rates of depression and anxiety. However, it is important to note that excessively high levels of <strong>Agreeableness</strong> can also have 
-            negative consequences, such as being overly compliant or lacking assertiveness.
-          </p>
-           
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">1mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown4" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown4" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Untitled</h5>
+                  <p class="small">Updated 5 hours ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">2mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown6" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown6" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Marketing strategy</h5>
+                  <p class="small">Updated 2 weeks ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
 
             
+          </div>
+          <!-- End Folders -->
         </div>
-        
+
+        <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+          <ul class="list-group">
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">WordPress contract terms</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 50 min ago</li>
+                    <li class="list-inline-item">25kb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown1" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/pdf-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Dashboard layout flow</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 1 hour ago</li>
+                    <li class="list-inline-item">1mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown2" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/google-slides-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">WordPress theme presentation</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 5 hours ago</li>
+                    <li class="list-inline-item">3mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown3" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown3" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Untitled</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 5 hours ago</li>
+                    <li class="list-inline-item">1mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown4" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown4" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/google-sheets-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Hot startup 2019 - Report</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 3 weeks ago</li>
+                    <li class="list-inline-item">3mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown5" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown5" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Marketing strategy</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 2 weeks ago</li>
+                    <li class="list-inline-item">2mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown6" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown6" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/components/placeholder-img-format.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Past-experience.jpg</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 1 month ago</li>
+                    <li class="list-inline-item">15mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown7" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown7" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/components/placeholder-img-format.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Front_2018.jpg</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 1 month ago</li>
+                    <li class="list-inline-item">9mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown8" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown8" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/pdf-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Business opportunities</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 2 months ago</li>
+                    <li class="list-inline-item">4mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown9" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown9" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+          </ul>
+        </div>
       </div>
-      <!-- End Card -->
+      <!-- End Tab Content -->
     </div>
     <!-- End Content -->
 
@@ -1823,6 +2612,46 @@
   </div>
 
   <!-- End Welcome Message Modal -->
+
+  <!-- Upload files Modal -->
+  <div class="modal fade" id="uploadFilesModal" tabindex="-1" aria-labelledby="uploadFilesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="uploadFilesModalLabel">Add files</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <!-- Dropzone -->
+          <div id="attachFilesNewProjectLabel" class="js-dropzone dz-dropzone dz-dropzone-card">
+            <div class="dz-message">
+              <img class="avatar avatar-xl avatar-4x3 mb-3" src="./assets/svg/illustrations/oc-browse.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="avatar avatar-xl avatar-4x3 mb-3" src="./assets/svg/illustrations-light/oc-browse.svg" alt="Image Description" data-hs-theme-appearance="dark">
+
+              <h5>Drag and drop your file here</h5>
+
+              <p class="mb-2">or</p>
+
+              <span class="btn btn-white btn-sm">Browse files</span>
+            </div>
+          </div>
+          <!-- End Dropzone -->
+        </div>
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-white" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button type="button" class="btn btn-primary">Upload</button>
+        </div>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </div>
+
+  <!-- End Upload files Modal -->
   <!-- ========== END SECONDARY CONTENTS ========== -->
 
   <!-- JS Global Compulsory  -->
@@ -1834,101 +2663,11 @@
   <script src="./assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside.min.js"></script>
   <script src="./assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
 
-  <script src="./assets/vendor/tom-select/dist/js/tom-select.complete.min.js"></script>
-  <script src="./assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
-  <script src="./assets/vendor/datatables.net.extensions/select/select.min.js"></script>
-  <script src="./assets/vendor/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-  <script src="./assets/vendor/datatables.net-buttons/js/buttons.flash.min.js"></script>
-  <script src="./assets/vendor/jszip/dist/jszip.min.js"></script>
-  <script src="./assets/vendor/pdfmake/build/pdfmake.min.js"></script>
-  <script src="./assets/vendor/pdfmake/build/vfs_fonts.js"></script>
-  <script src="./assets/vendor/datatables.net-buttons/js/buttons.html5.min.js"></script>
-  <script src="./assets/vendor/datatables.net-buttons/js/buttons.print.min.js"></script>
-  <script src="./assets/vendor/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+  <script src="./assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="./assets/vendor/dropzone/dist/min/dropzone.min.js"></script>
 
   <!-- JS Front -->
   <script src="./assets/js/theme.min.js"></script>
-
-  <!-- JS Plugins Init. -->
-  <script>
-    $(document).on('ready', function () {
-      // INITIALIZATION OF DATATABLES
-      // =======================================================
-      HSCore.components.HSDatatables.init($('#datatable'), {
-        dom: 'Bfrtip',
-        buttons: [
-          {
-            extend: 'copy',
-            className: 'd-none'
-          },
-          {
-            extend: 'excel',
-            className: 'd-none'
-          },
-          {
-            extend: 'csv',
-            className: 'd-none'
-          },
-          {
-            extend: 'pdf',
-            className: 'd-none'
-          },
-          {
-            extend: 'print',
-            className: 'd-none'
-          },
-        ],
-        select: {
-          style: 'multi',
-          selector: 'td:first-child input[type="checkbox"]',
-          classMap: {
-            checkAll: '#datatableCheckAll',
-            counter: '#datatableCounter',
-            counterInfo: '#datatableCounterInfo'
-          }
-        },
-        language: {
-          zeroRecords: `<div class="text-center p-4">
-              <img class="mb-3" src="./assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="default">
-              <img class="mb-3" src="./assets/svg/illustrations-light/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="dark">
-            <p class="mb-0">No data to show</p>
-            </div>`
-        }
-      });
-
-      const datatable = HSCore.components.HSDatatables.getItem(0)
-
-      $('#export-copy').click(function() {
-        datatable.button('.buttons-copy').trigger()
-      });
-
-      $('#export-excel').click(function() {
-        datatable.button('.buttons-excel').trigger()
-      });
-
-      $('#export-csv').click(function() {
-        datatable.button('.buttons-csv').trigger()
-      });
-
-      $('#export-pdf').click(function() {
-        datatable.button('.buttons-pdf').trigger()
-      });
-
-      $('#export-print').click(function() {
-        datatable.button('.buttons-print').trigger()
-      });
-
-      $('.js-datatable-filter').on('change', function() {
-        var $this = $(this),
-          elVal = $this.val(),
-          targetColumnIndex = $this.data('target-column-index');
-
-        if (elVal === 'null') elVal = ''
-
-        datatable.column(targetColumnIndex).search(elVal).draw();
-      });
-    });
-  </script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -1951,9 +2690,14 @@
         HSBsDropdown.init()
 
 
-        // INITIALIZATION OF SELECT
+        // INITIALIZATION OF NAV SCROLLER
         // =======================================================
-        HSCore.components.HSTomSelect.init('.js-select')
+        new HsNavScroller('.js-nav-scroller')
+
+
+        // INITIALIZATION OF DROPZONE
+        // =======================================================
+        HSCore.components.HSDropzone.init('.js-dropzone')
       }
     })()
   </script>

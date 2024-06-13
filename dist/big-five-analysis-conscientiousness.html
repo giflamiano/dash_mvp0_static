@@ -129,7 +129,7 @@
 
   <!-- ========== HEADER ========== -->
 
-  <header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-container navbar-bordered bg-white">
+  <header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-container bg-white">
     <div class="navbar-nav-wrap">
       <!-- Logo -->
       <a class="navbar-brand" href="../index.html" aria-label="Front">
@@ -305,7 +305,7 @@
             <!-- Notification -->
             <div class="dropdown">
               <button type="button" class="btn btn-ghost-secondary btn-icon rounded-circle" id="navbarNotificationsDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-dropdown-animation>
-                <i class="bi-bell"></i>
+                <img src="assets/svg/icons/bell.svg" alt="bell icon">
                 <span class="btn-status btn-sm-status btn-status-danger"></span>
               </button>
 
@@ -709,118 +709,6 @@
             <!-- End Notification -->
           </li>
 
-          <li class="nav-item d-none d-sm-inline-block">
-            <!-- Apps -->
-            <div class="dropdown">
-              <button type="button" class="btn btn-icon btn-ghost-secondary rounded-circle" id="navbarAppsDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>
-                <i class="bi-app-indicator"></i>
-              </button>
-
-              <div class="dropdown-menu dropdown-menu-end dropdown-card navbar-dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="navbarAppsDropdown" style="width: 25rem;">
-                <div class="card">
-                  <!-- Header -->
-                  <div class="card-header">
-                    <h4 class="card-title">Web apps &amp; services</h4>
-                  </div>
-                  <!-- End Header -->
-
-                  <!-- Body -->
-                  <div class="card-body card-body-height">
-                    <a class="dropdown-item" href="#">
-                      <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/atlassian-icon.svg" alt="Image Description">
-                        </div>
-                        <div class="flex-grow-1 text-truncate ms-3">
-                          <h5 class="mb-0">Atlassian</h5>
-                          <p class="card-text text-body">Security and control across Cloud</p>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a class="dropdown-item" href="#">
-                      <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/slack-icon.svg" alt="Image Description">
-                        </div>
-                        <div class="flex-grow-1 text-truncate ms-3">
-                          <h5 class="mb-0">Slack <span class="badge bg-primary rounded-pill text-uppercase ms-1">Try</span></h5>
-                          <p class="card-text text-body">Email collaboration software</p>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a class="dropdown-item" href="#">
-                      <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
-                        </div>
-                        <div class="flex-grow-1 text-truncate ms-3">
-                          <h5 class="mb-0">Google webdev</h5>
-                          <p class="card-text text-body">Work involved in developing a website</p>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a class="dropdown-item" href="#">
-                      <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/brands/frontapp-icon.svg" alt="Image Description">
-                        </div>
-                        <div class="flex-grow-1 text-truncate ms-3">
-                          <h5 class="mb-0">Frontapp</h5>
-                          <p class="card-text text-body">The inbox for teams</p>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a class="dropdown-item" href="#">
-                      <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="./assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
-                        </div>
-                        <div class="flex-grow-1 text-truncate ms-3">
-                          <h5 class="mb-0">HS Support</h5>
-                          <p class="card-text text-body">Customer service and support</p>
-                        </div>
-                      </div>
-                    </a>
-
-                    <a class="dropdown-item" href="#">
-                      <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                          <div class="avatar avatar-sm avatar-soft-dark">
-                            <span class="avatar-initials"><i class="bi-grid"></i></span>
-                          </div>
-                        </div>
-                        <div class="flex-grow-1 text-truncate ms-3">
-                          <h5 class="mb-0">More Front products</h5>
-                          <p class="card-text text-body">Check out more HS products</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!-- End Body -->
-
-                  <!-- Footer -->
-                  <a class="card-footer text-center" href="#">
-                    View all apps <i class="bi-chevron-right"></i>
-                  </a>
-                  <!-- End Footer -->
-                </div>
-              </div>
-            </div>
-            <!-- End Apps -->
-          </li>
-
-          <li class="nav-item d-none d-sm-inline-block">
-            <!-- Activity -->
-            <button class="btn btn-ghost-secondary btn-icon rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasActivityStream" aria-controls="offcanvasActivityStream">
-              <i class="bi-x-diamond"></i>
-            </button>
-            <!-- Activity -->
-          </li>
-
           <li class="nav-item">
             <!-- Account -->
             <div class="dropdown">
@@ -982,9 +870,16 @@
             </div>
 
             <div class="nav-item">
-              <a class="nav-link " href="./error-404.html" data-placement="left">
+              <a class="nav-link " href="./apps-kanban.html" data-placement="left">
                 <img style="padding-right: 5px;" src="./assets/svg/icons/kanban.svg" alt="kanban icon">
                 <span class="nav-link-title">Kanban</span>
+              </a>
+            </div>
+
+            <div class="nav-item">
+              <a href="./projects.html" class="nav-link" data-placement="left">
+                <img style="padding-right: 5px;" src="./assets/svg/icons/app.svg" alt="app icon">
+                <span class="nav-link-title">Resource Analysis</span>
               </a>
             </div>
             
@@ -996,7 +891,7 @@
             </div>
 
             <div class="nav-item">
-              <a class="nav-link " href="./error-404.html" data-placement="left">
+              <a class="nav-link " href="./apps-file-manager.html" data-placement="left">
                 <img style="padding-right: 5px;" src="./assets/svg/icons/sticky.svg" alt="sticky icon">
                 <span class="nav-link-title">Notes</span>
               </a>
@@ -1062,60 +957,68 @@
         <!-- Body -->
         <div class="card-body">
           <div class="row align-items-md-center gx-md-5">
-            <div class="col-md">
-              <!-- List -->
-              <ul class="list-unstyled list-py-1 mb-0">
-                <!-- Factor Scores -->
-                <li class="d-flex align-items-center fs-6">
-                  <span class="me-3">Openness</span>
-                  <div class="progress flex-grow-1">
-                    <div class="" role="progressbar" style="width: 78%; background-color: #23679e;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span class="ms-3">78%</span>
-                </li>
-                <!-- End Factor Scores -->
-
-                <!-- Factor Scores -->
-                <li class="d-flex align-items-center fs-6">
-                  <span class="me-3">Conscientiousness</span>
-                  <div class="progress flex-grow-1">
-                    <div class="" role="progressbar" style="width: 98%; background-color: #4a84be;" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span class="ms-3">98%</span>
-                </li>
-                <!-- End Factor Scores -->
-
-                <!-- Factor Scores -->
-                <li class="d-flex align-items-center fs-6">
-                  <span class="me-3">Extraversion</span>
-                  <div class="progress flex-grow-1">
-                    <div class="" role="progressbar" style="width: 89%; background-color: #6ca2de;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span class="ms-3">89%</span>
-                </li>
-                <!-- End Factor Scores -->
-
-                <!-- Factor Scores -->
-                <li class="d-flex align-items-center fs-6">
-                  <span class="me-3">Agreeableness</span>
-                  <div class="progress flex-grow-1">
-                    <div class="" role="progressbar" style="width: 20%; background-color: #8dc1ff;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span class="ms-3">20%</span>
-                </li>
-                <!-- End Factor Scores -->
-
-                <!-- Factor Scores -->
-                <li class="d-flex align-items-center fs-6">
-                  <span class="me-3">Neuroticism</span>
-                  <div class="progress flex-grow-1">
-                    <div class="" role="progressbar" style="width: 93%; background-color: #aee2ff;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span class="ms-3">93%</span>
-                </li>
-                <!-- End Factor Scores -->
-              </ul>
-              <!-- End List -->
+            <div class="col-md align-items-md-center">
+              <table class="table table-sm align-items-md-center">
+                <thead>
+                  <td scope="col" style="width: 7%;">Factor</td>
+                  <td scope="col" style="width: 10%; text-align: right;">Factor label</td>
+                  <td scope="col">Raw score</td>
+                  <td scope="col" style="width: 12%;">Score percentile</td>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">I</td>
+                    <td style="text-align: right">Openness</td>
+                    <td style="padding-top: 13.5px;">
+                      <div class="progress flex-grow-1">
+                        <div class="" role="progressbar" style="width: 78%; background-color: #23679e;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>78%</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">II</td>
+                    <td style="text-align: right;">Conscientiousness</td>
+                    <td style="padding-top: 13.5px;">
+                      <div class="progress flex-grow-1">
+                        <div class="" role="progressbar" style="width: 98%; background-color: #4a84be;" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>98%</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">III</td>
+                    <td style="text-align: right;">Extraversion</td>
+                    <td style="padding-top: 13.5px;">
+                      <div class="progress flex-grow-1">
+                        <div class="" role="progressbar" style="width: 89%; background-color: #6ca2de;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>89%</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">IV</td>
+                    <td style="text-align: right;">Agreeableness</td>
+                    <td style="padding-top: 13.5px;">
+                      <div class="progress flex-grow-1">
+                        <div class="" role="progressbar" style="width: 20%; background-color: #8dc1ff;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>20%</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">V</td>
+                    <td style="text-align: right;">Neuroticism</td>
+                    <td style="padding-top: 13.5px;">
+                      <div class="progress flex-grow-1">
+                        <div class="" role="progressbar" style="width: 93%; background-color: #aee2ff;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>93%</td>
+                  </tr>
+                </tbody>
+                
+              </table>
             </div>
             <!-- End Col -->
           </div>
@@ -1136,23 +1039,25 @@
           <div class="text-center">
             <ul class="nav nav-segment nav-pills scrollbar-horizontal mb-7" role="tablist">
             <li class="nav-item">
-                <a class="nav-link" id="pills-one-code-features-example1-tab" data-toggle="pill" href="./big-five-analysis.html" role="tab" aria-controls="pills-one-code-features-example1" aria-selected="true">Openness</a>
+                <a class="nav-link" id="pills-one-code-features-example1-tab" data-toggle="pill" href="./big-five-analysis.html" role="tab" aria-controls="pills-one-code-features-example1" aria-selected="true">Factor I</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" id="pills-two-code-features-example1-tab" data-toggle="pill" href="#" role="tab" aria-controls="pills-two-code-features-example1" aria-selected="false">Conscientiousness</a>
+                <a class="nav-link active" id="pills-two-code-features-example1-tab" data-toggle="pill" href="#" role="tab" aria-controls="pills-two-code-features-example1" aria-selected="false">Factor II</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-three-code-features-example1-tab" data-toggle="pill" href="./big-five-analysis-extraversion.html" role="tab" aria-controls="pills-three-code-features-example1" aria-selected="false">Extraversion</a>
+                <a class="nav-link" id="pills-three-code-features-example1-tab" data-toggle="pill" href="./big-five-analysis-extraversion.html" role="tab" aria-controls="pills-three-code-features-example1" aria-selected="false">Factor III</a>
             </li>
             <li class="nav-item">
-                <a href="./big-five-analysis-agreeableness.html" class="nav-link">Agreeableness</a>
+                <a href="./big-five-analysis-agreeableness.html" class="nav-link">Factor IV</a>
             </li>
             <li class="nav-item">
-              <a href="./big-five-analysis-neuroticism.html" class="nav-link">Neuroticism</a>
+              <a href="./big-five-analysis-neuroticism.html" class="nav-link">Factor V</a>
             </li>
             </ul>
           </div>
           <p>
+            <strong>Factor II</strong> is labelled as <strong>Conscientiousness</strong>.
+            <br><br>
             Individuals who score high on <strong>Conscientiousness</strong> are characterized as being reliable, hardworking, and efficient. They tend to be well-organized 
             and responsible, and are motivated to achieve their goals. They may also exhibit a strong sense of self-discipline and perseverance.
             <br><br>
