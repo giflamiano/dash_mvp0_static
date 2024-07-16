@@ -16,8 +16,9 @@
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
-
   <link rel="stylesheet" href="./assets/vendor/tom-select/dist/css/tom-select.bootstrap5.css">
+  <link rel="stylesheet" href="./assets/vendor/daterangepicker/daterangepicker.css">
+
 
   <!-- CSS Front Template -->
 
@@ -143,8 +144,8 @@
       <div class="navbar-nav-wrap-content-start">
         <!-- Navbar Vertical Toggle -->
         <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
-          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
-          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          <img style="margin: 3px;" src="./assets/svg/icons/arrows-collapse-vertical.svg" class="navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <img style="margin: 3px;" src="./assets/svg/icons/arrows-collapse-vertical.svg" class="navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
         </button>
 
         <!-- End Navbar Vertical Toggle -->
@@ -882,7 +883,7 @@
               </a>
             </div>
             
-            <div class="nav-item">
+            <!-- <div class="nav-item">
               <a class="nav-link " href="./error-404.html" data-placement="left">
                 <img style="padding-right: 5px;" src="./assets/svg/icons/calendar-week.svg" alt="calendar-week icon">
                 <span class="nav-link-title">Calendar</span>
@@ -894,7 +895,7 @@
                 <img style="padding-right: 5px;" src="./assets/svg/icons/sticky.svg" alt="sticky icon">
                 <span class="nav-link-title">Notes</span>
               </a>
-            </div>
+            </div> -->
 
           </div>
 
@@ -915,22 +916,16 @@
         <h1 class="page-header-title">Results Summary</h1>
         <div class="col-auto">
           <div class="row align-items-center g-0">
-            <div class="col-auto">Analysis Date:</div>
-
-            <!-- Flatpickr -->
-            <div class="col flatpickr-custom-position-fix-sm-down">
-              <div id="projectDeadlineFlatpickr" class="js-flatpickr flatpickr-custom flatpickr-custom-borderless input-group input-group-sm" data-hs-flatpickr-options='{
-                      "appendTo": "#projectDeadlineFlatpickr",
-                      "dateFormat": "d/m/Y",
-                      "wrap": true
-                    }'>
-                <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="05/22/2024">
-                <div class="input-group-append input-group-text ps-0" data-bs-toggle>
-                  <i class="bi-chevron-down"></i>
-                </div>
-              </div>
+            <div class="col-12 col-sm-auto mb-3" style="padding-right: 10px;">Analysis Date:</div>
+            <div class="col-auto mb-3">
+              <!-- Daterangepicker -->
+              <button id="js-daterangepicker-predefined" class="btn btn-ghost-secondary btn-sm">
+                <img src="./assets/svg/icons/calendar-week.svg" alt="calendar-week icon">
+                <span class="js-daterangepicker-predefined-preview ms-2"></span>
+                <img src="./assets/svg/icons/chevron-down.svg" alt="chevron-down icon" height="10" width="10">
+              </button>
+              <!-- End Daterangepicker -->
             </div>
-            <!-- End Flatpickr -->
           </div>
         </div>
 
@@ -1846,9 +1841,52 @@
   <script src="./assets/vendor/datatables.net-buttons/js/buttons.html5.min.js"></script>
   <script src="./assets/vendor/datatables.net-buttons/js/buttons.print.min.js"></script>
   <script src="./assets/vendor/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+  <script src="./assets/vendor/daterangepicker/moment.min.js"></script>
+  <script src="./assets/vendor/daterangepicker/daterangepicker.js"></script>
+
 
   <!-- JS Front -->
   <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF DATERANGEPICKER
+      // =======================================================
+      $('.js-daterangepicker').daterangepicker();
+
+      $('.js-daterangepicker-times').daterangepicker({
+        timePicker: true,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+          format: 'M/DD hh:mm A'
+        }
+      });
+
+      var start = moment();
+      var end = moment();
+
+      function cb(start, end) {
+        $('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+      }
+
+      $('#js-daterangepicker-predefined').daterangepicker({
+        startDate: start,
+        endDate: end,
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+
+      cb(start, end);
+    });
+  </script>
 
   <!-- JS Plugins Init. -->
   <script>
